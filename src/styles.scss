@@ -45,3 +45,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+	font-family: "Hammersmith One";
+	src: url(./assets/font/HammersmithOne-Regular.ttf);
+}
+
+* {
+	font-family: "Hammersmith One";
+}
