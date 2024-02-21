@@ -8,4 +8,9 @@ import { Observable } from 'rxjs';
 export class BackendService {
 
   constructor(private http: HttpClient) { }
+  public login(userData: any): Observable<any> {
+    const route = 'https://localhost:7191/user/login';
+    return this.http.post(route, userData);
+
+  }
 }
