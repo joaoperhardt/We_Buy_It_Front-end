@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-//import { UserService } from 'src/app/backend/user.service';
-import { BackendService } from 'src/app/backend/backend.service';
+import { UserService } from 'src/app/backend/user.service';
 import { __param } from 'tslib';
 
 @Component({
@@ -15,8 +13,8 @@ export class CadastroUsuarioComponent {
   public id: string = `0`;
   public constructor(
     private formBuilder: FormBuilder,
-    private userService: BackendService,
-    //private userService: UserService,
+    
+    private userService: UserService,
     private activatedRoute: ActivatedRoute,
     private router: Router
     ) {
@@ -35,7 +33,7 @@ export class CadastroUsuarioComponent {
       return;
     }
   
-    this.userService.post(this.formGroup.value).subscribe((result: any) => {
+    this.userService.postcadastrousuario(this.formGroup.value).subscribe((result: any) => {
       this.router.navigate([``]);
     });
     
