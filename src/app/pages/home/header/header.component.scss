@@ -46,6 +46,8 @@ nav ul li {
     text-align: center;
     border-radius: 8px;
     color: #ffffff;
+    position: relative;
+    z-index: 1;
 }
  
 .sub-menu li {

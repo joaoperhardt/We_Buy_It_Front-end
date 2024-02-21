@@ -1,3 +1,7 @@
+* {
+    font-family: Hammersmith One !important;
+    font-size: 16px;
+}
 body {
     font-family:'HammersmithOne-Regular';
     font-size: 15px;
@@ -22,6 +26,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #000;
   }
   @media (max-width: 390px) {
     .categoria-button-toggle{
