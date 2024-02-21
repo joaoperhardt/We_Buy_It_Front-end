@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent {
-
+  constructor(library: LaIconLibrary) {
+    library.addIcons([lasSearch, lasShoppingCart, lasBell, lasUserCircle])
+  }
 }

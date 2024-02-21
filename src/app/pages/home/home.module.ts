@@ -14,7 +14,8 @@ import { HeaderModule } from './header/header.module';
     HeaderModule
   ],
   exports: [
-    HomeComponent
+    HomeComponent,
+    HeaderModule
   ]
 })
 export class HomeModule { }
