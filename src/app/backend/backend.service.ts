@@ -7,5 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class BackendService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
+
+  public post(userData: any):Observable<any> {
+    const route: string = 'https://localhost:7191/cadastro';
+    return this.http.post(route, userData, {
+    });
+  }
 }
