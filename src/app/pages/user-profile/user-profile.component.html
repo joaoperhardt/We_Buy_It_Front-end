@@ -61,7 +61,7 @@
         <div class="pc hidden lg:flex justify-center flex-col">
             <div class="profile-container p-5 text-center flex flex-row justify-center">
                 <div class="profile-details flex">
-                    <!-- <form nz-form [formGroup]="formGroup" class="profile-form mt-5 flex flex-col w-[452px]"> -->
+                    <form nz-form [formGroup]="formGroup" class="profile-form mt-5 flex flex-col w-[452px]">
 
                         <label class="text-left" for="name">Nome</label>
                         <input nz-input formControlName="name" type="text" id="pc-name" name="name">
@@ -74,16 +74,16 @@
 
                         <div class="profile-header flex items-center ml-32 mb-32">
                             <div class="profile-image-container">
-                                <!-- <label for="edit">
+                                <label for="edit">
                                     <img nz-image [nzSrc]="profileImg" class="profile-image rounded-full w-[220px] h-[220px] flex h-14 ">
                                 </label>
                                 <nz-upload nzAction="https://localhost:7191/file/upload" [nzMultiple]="true" [nzHeaders]="{ authorization: '' }" (nzChange)="handleChange($event)">
                                     <i id="edit" class="las la-pen text-4xl"></i>
-                                </nz-upload> -->
+                                </nz-upload>
                             </div>
                         </div>
 
-                    <!-- </form> -->
+                    </form>
 
                     
                 </div>
@@ -124,7 +124,7 @@
       
             </div>
             <div class="save-button">
-                <!-- <button id="save-button-desktop" class="purple-button my-8 w-[300px]" type="button" (click)="submit()">Salvar</button> -->
+                <button id="save-button-desktop" class="purple-button my-8 w-[300px]" type="button" (click)="submit()">Salvar</button>
             </div>
         </div>
     </div>
