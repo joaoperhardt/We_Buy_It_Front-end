@@ -37,7 +37,7 @@ export class CadastroAnuncioComponent {
   
   }
   public submit() {
-console.log(this.formGroup.value);
+  console.log(this.formGroup.value);
 
     if (!this.formGroup.valid) {
       alert('Preencha Corretamente');
