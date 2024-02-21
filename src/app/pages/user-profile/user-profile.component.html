@@ -37,7 +37,7 @@
                 <a href="./inserir-cartao.html"><p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900"> Adicionar cartão
                     +</p></a>
                 <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center">
-                    <i class="las la-credit-card text-4xl mt-5"></i>
+                    <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
                     <div class="text-left ml-5">
                         <p>Mastercard</p>
                         <p>********6045</p>
@@ -71,58 +71,47 @@
 
                         <label class="text-left" for="email">Email</label>
                         <input nz-input formControlName="email" type="email" id="pc-email" name="email">
-
-                        <div class="profile-header flex items-center ml-32 mb-32">
-                            <div class="profile-image-container">
-                                <label for="edit">
-                                    <img nz-image [nzSrc]="profileImg" class="profile-image rounded-full w-[220px] h-[220px] flex h-14 ">
-                                </label>
-                                <nz-upload nzAction="https://localhost:7191/file/upload" [nzMultiple]="true" [nzHeaders]="{ authorization: '' }" (nzChange)="handleChange($event)">
-                                    <i id="edit" class="las la-pen text-4xl"></i>
-                                </nz-upload>
-                            </div>
-                        </div>
-
                     </form>
+                    <div class="profile-header flex items-center ml-32 my-16">
+                        <div class="profile-image-container">
+                            <label for="edit">
+                                <img nz-image [nzSrc]="profileImg" class="profile-image rounded-full w-[220px] h-[220px] flex h-14 ">
+                            </label>
+                            <nz-upload nzAction="https://localhost:7191/file/upload" [nzMultiple]="true" [nzHeaders]="{ authorization: '' }" (nzChange)="handleChange($event)">
+                                <i id="edit" class="las la-pen text-4xl"></i>
+                            </nz-upload>
+                        </div>
+                    </div>
 
-                    
                 </div>
             </div>
-            <div class="items-center mx-[240px] mt-6">
-                <p class="text-xl">Formas de pagamento:</p>
-              <a href="./inserir-cartao.html"><p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900 justify-center"> Adicionar
-                cartão +</p></a>
-                <div class="flex border-y-4 py-8">
-                  <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center">
-                    <i class="las la-credit-card text-4xl mt-5"></i>
-                    <div class="text-left ml-5">
-                      <p>Mastercard</p>
-                      <p>********6045</p>
+            <div class="flex flex-row justify-center">
+                <div class="items-center mt-6">
+                    <p class="text-xl">Formas de pagamento:</p>
+                  <a href="./inserir-cartao.html"><p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900 justify-center"> Adicionar
+                    cartão +</p></a>
+                    <div class="flex border-y-4 py-8">
+                      <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center items-center">
+                            <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
+                            <div class="text-left ml-5">
+                          <p>Mastercard</p>
+                          <p>********6045</p>
+                            </div>
+                         <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                      </div>
+          
                     </div>
-                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                </div>
+                <div class="add-store flex flex-col">
+                    <p class="mt-9 text-xl">Suas Lojas:</p>
+                  <a href="./Tela-Cadastro-Loja.html"><label class="underline underline-offset-2 text-purple-900 cursor-pointer flex my-4" for="add-store-plus">Adicionar Loja +</label></a>
+                  <div class="flex border-y-4 py-8">
+                    <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
                   </div>
-      
-                  <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center ml-12">
-                    <i class="las la-credit-card text-4xl mt-5"></i>
-                    <div class="text-left ml-5">
-                      <p>Visa</p>
-                      <p>********0504</p>
-                    </div>
-                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
-                  </div>
+          
                 </div>
             </div>
-            <div class="add-store flex flex-col mx-[240px]">
-                <p class="mt-9 text-xl">Suas Lojas:</p>
-              <a href="./Tela-Cadastro-Loja.html"><label class="underline underline-offset-2 text-purple-900 cursor-pointer flex my-4" for="add-store-plus">Adicionar Loja +</label></a>
-              <div class="flex border-y-4 py-8">
-                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
-                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
-                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
-                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
-              </div>
-      
-            </div>
+            
             <div class="save-button">
                 <button id="save-button-desktop" class="purple-button my-8 w-[300px]" type="button" (click)="submit()">Salvar</button>
             </div>
