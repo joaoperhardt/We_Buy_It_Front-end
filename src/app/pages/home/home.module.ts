@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HeaderModule } from './header/header.module';
 import { CadastroAnuncioModule } from '../cadastro-anuncio/cadastro-anuncio.module';
+import { CadastroUsuarioModule } from '../cadastro-usuario/cadastro-usuario.module';
 
 
 
@@ -13,7 +14,8 @@ import { CadastroAnuncioModule } from '../cadastro-anuncio/cadastro-anuncio.modu
   imports: [
     CommonModule,
     HeaderModule,
-    CadastroAnuncioModule
+    CadastroAnuncioModule,
+    CadastroUsuarioModule
   ],
   exports: [
     HomeComponent
