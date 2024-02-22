@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BackendService } from 'src/app/backend/backend.service';
@@ -12,8 +12,8 @@ export class LoginComponent {
   public loginForm:any;
   public constructor(
     private LoginService: BackendService,
-    private formBuilder:FormBuilder,
-    private router:Router
+    @Inject(Router) private router: Router,
+    private formBuilder: FormBuilder
   ){
     this.loginForm=this.formBuilder.group({
       email:['', Validators.required],
@@ -31,6 +31,7 @@ export class LoginComponent {
       console.log(result)
       this.router.navigate([`user`])
     }, err => {
+      alert("Login Inválido! :(")
       console.log(err)
     })
   }
