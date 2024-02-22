@@ -22,6 +22,7 @@
     "@angular/router": "^16.1.0",
     "angular-line-awesome": "^17.0.0",
     "extensions": "^4.1.2",
+    "ng": "^0.0.0",
     "ng-zorro-antd": "^16.2.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
