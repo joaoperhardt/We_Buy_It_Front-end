@@ -9,23 +9,28 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
+import { CadastroLojaModule } from './pages/cadastro-loja/cadastro-loja.module';
+import { AppRoutingModule } from './app-routing.module';
+import { CadastroLojaComponent } from './pages/cadastro-loja/cadastro-loja.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    HomeModule
-  ],
-  providers: [
-    { provide: NZ_I18N, useValue: en_US }
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    providers: [
+        { provide: NZ_I18N, useValue: en_US }
+    ],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        HomeModule,
+        AppRoutingModule,
+        CadastroLojaModule
+    ]
 })
 export class AppModule { }
