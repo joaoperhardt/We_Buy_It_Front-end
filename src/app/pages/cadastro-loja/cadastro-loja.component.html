@@ -1,1 +1,100 @@
-<p>cadastro-loja works!</p>
+<html lang="en">
+<body>
+    <div id="formulario">
+        <div id="title-cadastro"><h1 class="text-color-[#B35FD0]">Cadastro de Loja</h1></div>
+        <form id="form1" [formGroup]="formGroup">
+            <div>
+                <div>   
+                    <label nzRequired nzFor="Name" class="w-80">Nome</label>
+                    <nz-form-control nzErrorTip="Preencha o nome!">
+                        <input formControlName="Name" type="text"  id="Name" >
+                    </nz-form-control>
+                </div>
+                <div >
+                    <label nzRequired nzFor="Description">Descrição</label>
+                    <nz-form-control nzErrorTip="Preencha a descrição!">
+                         <input formControlName="Description" type="text" id="Description" >
+                    </nz-form-control>
+                </div>
+                <div>
+                    <div class="flex justify-between items-center">
+                        <label nzRequired nzFor="Cep">CEP</label>
+                        <a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a>
+                    </div>
+                    <nz-form-control nzErrorTip="Preencha o campo CEP!">
+                        <input formControlName="Cep" type="text" id="Cep" placeholder="XXXXX-XXX" >                
+                    </nz-form-control>    
+                </div>
+                <div>
+                    <label nzRequired nzFor="State">Estado</label>
+                    <nz-form-control nzErrorTip="Preencha o campo telefone!">
+                        <select id="State" class="form-control" id="State">
+                            <option selected>Selecione seu estado</option>
+                            <option value="1">SC</option>
+                          </select>
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="City">Estado</label>
+                    <nz-form-control nzErrorTip="Preencha o campo telefone!">
+                        <select id="City" class="form-control" id="City">
+                            <option selected>Selecione sua Cidade</option>
+                            <option value="1">Blumenau</option>
+                            <option value="2">Florianópolis</option>
+                            <option value="3">Joinville</option>
+                          </select>
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="District">Bairro</label>
+                    <nz-form-control nzErrorTip="Preencha o campo email!">
+                        <input formControlName="District" type="text" id="District" >
+                    </nz-form-control>        
+                </div>
+                <div>
+                    <label nzRequired nzFor="Street">Rua</label>
+                    <nz-form-control nzErrorTip="Preencha a senha!">
+                        <input formControlName="Street" type="text" id="Street" >
+                    </nz-form-control>    
+                </div>
+
+                <div>
+                    <label nzRequired nzFor="Number">Numero</label>
+                    <nz-form-control nzErrorTip="Preencha a senha!">
+                        <input formControlName="Number" type="text" id="Number" >
+                    </nz-form-control>    
+                </div>
+
+                <div>
+                    <label nzRequired nzFor="Complement">Complemento</label>
+                    <nz-form-control nzErrorTip="Preencha a senha!">
+                        <input formControlName="Complement" type="text" id="Complement" >
+                    </nz-form-control>    
+                </div>
+                <div>
+                    <label nzRequired nzFor="Phone">Contato</label>
+                    <nz-form-control nzErrorTip="Preencha a senha!">
+                        <input formControlName="Phone" type="text" id="Phone" placeholder="XXXXX-XXXX" >
+                    </nz-form-control>    
+                </div>
+                <div>
+                    <label nzRequired nzFor="Cpf">CPF</label>
+                    <nz-form-control nzErrorTip="Preencha a senha!">
+                        <input formControlName="Cpf" type="text" id="Cpf" >
+                    </nz-form-control>    
+                </div>
+                <div>
+                    <label nzRequired nzFor="Cnpj">CNPJ</label>
+                    <nz-form-control nzErrorTip="Preencha a senha!">
+                        <input formControlName="Cnpj" type="text" id="Cnpj" >
+                    </nz-form-control>    
+                </div>
+
+                <div class="justify-center">
+                    <button nz-button nzType="primary" (click)="submit()" id="button">Cadastrar Loja</button>
+                </div>        
+            </div>        
+        </form>
+    </div>
+</body>
+</html>
