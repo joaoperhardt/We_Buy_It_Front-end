@@ -17,6 +17,17 @@ export class UserService {
     });
   }
   public postcadastrousuario(userData: any):Observable<any> {
+    const route: string = 'https://localhost:7191/cadastro';
+    return this.http.post(route, userData, {
+    });
+    
+  }
+    public postcadastroloja(userData: any):Observable<any> {
+      const route: string = 'https://localhost:7191/store';
+      return this.http.post(route, userData, {
+      });
+  }
+}
     const route: string = 'https://localhost:7191/user';
     return this.http.post(route, userData, {
     });
