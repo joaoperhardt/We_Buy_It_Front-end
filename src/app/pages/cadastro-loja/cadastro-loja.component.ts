@@ -33,23 +33,23 @@ getFormControlStatus: any;
       Phone: ['', Validators.required,],
       Cpf: ['', Validators.required,],
       Cnpj: ['', Validators.required,],
-      Password: ['', Validators.required,]
       })
     
     }
-  public submit() {
-    if (!this.formGroup.valid) {
-      alert('Invalido');
-      return;
-    }
-  
+
+    onSubmit() {
+      console.log(this.formGroup.value);
+      
+      if (!this.formGroup.valid) {
+        alert('Preencha Corretamente');
+        return;
+      }
+    
     this.userService.postcadastroloja(this.formGroup.value).subscribe((result: any) => {
       this.router.navigate([``]);
     });
     
     
   }
-  onSubmit() {
-    console.log(this.formGroup.value);
-  }
+
 }
