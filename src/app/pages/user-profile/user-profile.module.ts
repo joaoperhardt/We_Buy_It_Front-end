@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserProfileComponent } from './user-profile.component';
 import { AngularLineawesomeModule, LaIconLibrary } from 'angular-line-awesome';
-import { lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasCreditCard } from 'angular-line-awesome/icons';
+import { lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasCreditCard, lasPen } from 'angular-line-awesome/icons';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';  
 import { NzFormModule } from 'ng-zorro-antd/form';
@@ -36,6 +36,6 @@ import { HeaderModule } from '../home/header/header.module';
 })
 export class UserProfileModule { 
   constructor(library: LaIconLibrary) {
-    library.addIcons([lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasCreditCard])
+    library.addIcons([lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasCreditCard, lasPen])
   }
 }

@@ -30,8 +30,6 @@ export class UserProfileComponent {
     this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
       this.initUpdate();
     })
-
-    this.profileImg = "./assets/images/imagem (1).png";
   }
 
   public initUpdate() {
@@ -66,6 +64,5 @@ export class UserProfileComponent {
       this.msg.error(`${info.file.name} file upload failed.`);
     }
     this.formGroup.get('file').setValue(info.file.response.data.path);
-    
   }
 }
