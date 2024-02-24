@@ -28,3 +28,8 @@ export class UserService {
       });
   }
 }
+    const route: string = 'https://localhost:7191/user';
+    return this.http.post(route, userData, {
+    });
+  }
+}
