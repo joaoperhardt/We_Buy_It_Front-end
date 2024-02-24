@@ -35,13 +35,13 @@
     align-items: center;
     border-color: #581c87;
     justify-content: center;
-
 }
 
 #cadastro {
     text-align: center;
     font-size: 30px;
-    padding: 1%;
+    padding: 2%;
+    font-size: 15px;
 }
 
 body {
@@ -52,15 +52,21 @@ body {
     background-color: #fff;
     justify-content: center;
 }
-
-#banner {
-    background-color: #cccccc67;
-    height: 200px;
+#capa {
     position: relative;
-    width: 650px;
+    width: 550px;
+    display: flex;
+    border: 5px solid rgb(240, 240, 240);
+    max-width: 100%;
+    height: auto;
+   
+}
+#banner {
+    height: 250px;
+    position: relative;
+    width: 550px;
     display: flex;
     border-radius: 4%;
-   
 }
 
 #img-perfil {
@@ -73,7 +79,15 @@ body {
     margin-left: 26px;
     background-color: #cccccc67;
 }
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
+* {
+  font-family: "Hammersmith One";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    font-size: 15px; ;
+}
 
 @font-face {
     font-family: Hammersmith One;
@@ -89,13 +103,12 @@ body {
         font-size: 13px !important;
    }
     #banner {
-    background-color: #cccccc67;
-    height: 187px;
-    width: 358px;
-    position: relative;
-    display: flex;
-    border-radius: 4%;
-
+       background-color: #cccccc67;
+       height: auto;
+        width: 358px;
+        position: relative;
+        display: flex;
+      border-radius: 4%;
     }
    #img-perfil {
        width: 130px;

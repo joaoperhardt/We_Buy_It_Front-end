@@ -13,16 +13,16 @@
 
     <div id="formulário">
         <div id="cadastro">
-            <h1 class="text-color-[#B35FD0]">Cadastro de Loja</h1>
+            <h1>Cadastro de Loja</h1>
         </div>
         <form id="form1" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
             <div>
-
-                <div class="content flex item-center justify-center" style="margin-bottom: 110px;">
-                    <div id="banner">
-                        <img id="img-perfil" src="/src/assets/images/header/we_buy_it_logo.png" alt="perfil">
+                    <div class="content flex item-center justify-center" style="margin-bottom: 100px;">
+                        <div id="banner">
+                            <img id="capa" src="./assets/images/fotos_capa_loja/capa_2.png" alt="banner">
+                            <img id="img-perfil" src="./assets/images/fotos_capa_loja/foto_perfil.png" alt="perfil">
+                        </div>
                     </div>
-                </div>
                 <div>
                     <label nzRequired nzFor="Name" class="w-80">Nome</label>
                     <nz-form-control nzErrorTip="Preencha o Nome!">
