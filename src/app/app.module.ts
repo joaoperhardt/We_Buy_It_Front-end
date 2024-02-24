@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 
+
 registerLocaleData(en);
 
 @NgModule({
