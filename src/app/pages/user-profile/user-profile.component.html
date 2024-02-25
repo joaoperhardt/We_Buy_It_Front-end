@@ -15,15 +15,15 @@
                 </div>
             </div>
             <div class="profile-details">
-                <form class="profile-form mt-5 flex flex-col">
+                <form nz-form [formGroup]="formGroup" class="profile-form mt-5 flex flex-col">
                     <label for="name">Nome</label>
-                    <input type="text" id="mobile-name" name="name">
+                    <input nz-input formControlName="name" type="text" id="mobile-name" name="name">
 
                     <label for="cep">CEP</label>
-                    <input id="mobile-cep" name="cep">
+                    <input nz-input formControlName="cep" id="mobile-cep" name="cep">
 
                     <label for="email">Email</label>
-                    <input type="email" id="mobile-email" name="email">
+                    <input nz-input formControlName="email" type="email" id="mobile-email" name="email">
                 </form>
             </div>
             <div class="items-center flex flex-col">
@@ -35,7 +35,7 @@
                         cartão
                         +</p>
                 </a>
-                <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center">
+                <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center pt-4">
                     <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
                     <div class="text-left ml-5">
                         <p>Mastercard</p>
@@ -81,8 +81,7 @@
                                 cartão +</p>
                         </a>
                         <div class="flex border-y-4 py-8">
-                            <div
-                                class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center pt-4">
+                            <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center pt-4">
                                 <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
                                 <div class="text-left ml-5">
                                     <p>Mastercard</p>
@@ -97,13 +96,12 @@
                     <div class="profile-header flex items-center mt-16 mb-4">
                         <div class="profile-image-container">
                             <label for="edit">
-                                <img nz-image [nzSrc]="profileImg"
-                                    class="profile-image rounded-full w-[220px] h-[220px] flex h-14 ">
+                                <div
+                                    class="store-picture rounded-full w-[220px] h-[220px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                                </div>
                             </label>
-                            <nz-upload nzAction="https://localhost:7191/file/upload" [nzMultiple]="true"
-                                [nzHeaders]="{ authorization: '' }" (nzChange)="handleChange($event)">
-                                <la-icon icon="pen" id="edit" class="text-4xl"></la-icon>
-                            </nz-upload>
+
+                            <la-icon icon="pen" id="edit" class="text-4xl"></la-icon>
                         </div>
                     </div>
                     <div class="add-store flex flex-col">

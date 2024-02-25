@@ -13,7 +13,6 @@ import { NzMessageService } from 'ng-zorro-antd/message';
 export class UserProfileComponent {
   public id: string = `1`;
   public formGroup: any;
-  public profileImg: any;
   
   constructor(
     private backendService: BackendService,
@@ -35,7 +34,6 @@ export class UserProfileComponent {
   public initUpdate() {
     this.backendService.getByIdUser(this.id).subscribe((result: any) => {
       this.formGroup.patchValue(result);
-      this.profileImg=result.file;
     })
   }
 
@@ -50,7 +48,6 @@ export class UserProfileComponent {
     }
     ).subscribe((result: any) => {
       console.log(result)
-      this.router.navigate([`user`]);
     })
   }
 
