@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BackendService } from 'src/app/backend/backend.service';
+import { UserService } from 'src/app/backend/user.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { NzUploadChangeParam } from 'ng-zorro-antd/upload'; 
@@ -15,7 +15,7 @@ export class UserProfileComponent {
   public formGroup: any;
   
   constructor(
-    private backendService: BackendService,
+    private userService: UserService,
     private formBuilder: FormBuilder,
     private activatedRoute: ActivatedRoute,
     private router: Router,
@@ -32,7 +32,7 @@ export class UserProfileComponent {
   }
 
   public initUpdate() {
-    this.backendService.getByIdUser(this.id).subscribe((result: any) => {
+    this.userService.getByIdUser(this.id).subscribe((result: any) => {
       this.formGroup.patchValue(result);
     })
   }
@@ -42,7 +42,7 @@ export class UserProfileComponent {
       alert("Inválido");
       return;
     }
-    this.backendService.update({
+    this.userService.update({
       id: this.id,
       ...this.formGroup.value
     }
