@@ -43,6 +43,10 @@ body {
     cursor: pointer;
 }
 
+.product-tag:hover {
+    background-color: rgba($color: #d4a5f0, $alpha: 0.5);
+}
+
 .user-comment {
     display: flex;
     flex-direction: row;
@@ -68,7 +72,6 @@ body {
     padding: 8px;
     border: 2px solid rgba(81, 88, 112, .4);
     border-radius: 16px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
@@ -79,6 +82,13 @@ body {
     }
 
     li {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card li {
         font-size: 32px;
         line-height: 28px;
     }
