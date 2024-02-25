@@ -20,7 +20,24 @@ body {
 .card:hover {
     border-color: #B35FD0;
 }
- 
+
+#volunteers {
+    padding: 7px;
+    display: flex;
+    color: #B35FD0;
+}
+#volunteers ul i {
+    font-size: 1.6rem; 
+    margin-right: 2px;
+    margin-left: 3px;
+    justify-content: center;
+}
+.black-icon {
+    color: black;
+    justify-content: center;
+
+  }
+
 .product-price {
     display: flex;
     flex-direction: row;
@@ -31,6 +48,7 @@ body {
 .card ul {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
  
 .card i {
@@ -39,15 +57,7 @@ body {
 }
  
 @media (min-width: 1024px) {
-    .card i {
-        font-size: 30px;
-        line-height: 36px;
-    }
-}
- 
-.volunteer-icon {
-    margin: 8px;
-    color: #B35FD0;
+
 }
  
 .empty-icon {
@@ -57,4 +67,9 @@ body {
 #img-content{
     text-align: center;
 }
-
+#volunteers i {
+    font-size: 1.7rem; 
+    margin-right: 2px;
+    margin-left: 3px;
+    
+}
