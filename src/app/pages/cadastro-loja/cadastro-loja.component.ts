@@ -36,11 +36,12 @@ getFormControlStatus: any;
       })
     
     }
-
+  
     onSubmit() {
       console.log(this.formGroup.value);
       
-      if (!this.formGroup.valid) {
+    
+      if (!this.formGroup.valid) {  
         alert('Preencha Corretamente');
         return;
       }
@@ -51,5 +52,4 @@ getFormControlStatus: any;
     
     
   }
-
-}
+  }

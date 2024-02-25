@@ -6,7 +6,6 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { __param } from 'tslib';
-import { HomeComponent } from '../home/home.component';
 import { HeaderModule } from "../home/header/header.module";
 
 
