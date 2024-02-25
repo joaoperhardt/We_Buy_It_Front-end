@@ -5,6 +5,7 @@ import { HeaderModule } from './header/header.module';
 import { CadastroAnuncioModule } from '../cadastro-anuncio/cadastro-anuncio.module';
 import { CadastroUsuarioModule } from '../cadastro-usuario/cadastro-usuario.module';
 import { CadastroLojaModule } from '../cadastro-loja/cadastro-loja.module';
+import { TelaPesquisaModule} from '../tela-pesquisa/tela-pesquisa.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CadastroLojaModule } from '../cadastro-loja/cadastro-loja.module';
     HeaderModule,
     CadastroAnuncioModule,
     CadastroUsuarioModule,
-    CadastroLojaModule
+    CadastroLojaModule,
+    TelaPesquisaModule
   ],
   exports: [
     HomeComponent
