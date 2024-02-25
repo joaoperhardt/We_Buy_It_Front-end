@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 import { ProductModule } from './pages/product/product.module';
 import { TelaPesquisaComponent } from './pages/tela-pesquisa/tela-pesquisa.component';
+import { VisualizacaoLojaModule } from './pages/visualizacao-loja/visualizacao-loja.module';
 
 
 registerLocaleData(en);
@@ -19,6 +20,7 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     
+    
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     HomeModule,
+    visualizacao-loja
     ProductModule
   ],
   providers: [

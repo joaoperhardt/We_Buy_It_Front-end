@@ -6,10 +6,12 @@ import { CadastroAnuncioModule } from '../cadastro-anuncio/cadastro-anuncio.modu
 import { CadastroUsuarioModule } from '../cadastro-usuario/cadastro-usuario.module';
 import { CadastroLojaModule } from '../cadastro-loja/cadastro-loja.module';
 import { TelaPesquisaModule} from '../tela-pesquisa/tela-pesquisa.module';
+import { VisualizacaoLojaModule } from '../visualizacao-loja/visualizacao-loja.module';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { TelaPesquisaModule} from '../tela-pesquisa/tela-pesquisa.module';
     CadastroAnuncioModule,
     CadastroUsuarioModule,
     CadastroLojaModule,
-    TelaPesquisaModule
+    TelaPesquisaModule,
+    VisualizacaoLojaModule
   ],
   exports: [
     HomeComponent
