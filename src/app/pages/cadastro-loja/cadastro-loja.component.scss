@@ -18,6 +18,10 @@
     font-size: 20px;
 }
 
+.font-bold {
+    font-size: 24px;
+}
+
 #button {
     background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
     color: #fff;
@@ -29,9 +33,10 @@
     margin-top: 20px;
     border-radius: 5px;
 }
+
 #form1 {
     position: relative;
-    display:flex;
+    display: flex;
     align-items: center;
     border-color: #581c87;
     justify-content: center;
@@ -52,15 +57,18 @@ body {
     background-color: #fff;
     justify-content: center;
 }
+
 #capa {
     position: relative;
     width: 550px;
     display: flex;
-    border: 5px solid rgb(240, 240, 240);
+    border: 5px solid #cccccc67;
     max-width: 100%;
     height: auto;
-   
+    border-radius: 8px;
+
 }
+
 #banner {
     height: 250px;
     position: relative;
@@ -73,53 +81,60 @@ body {
     width: 190px;
     height: 190px;
     border-radius: 100%;
-    border: 20px solid white;
+    border: 8px solid #cccccc67;
+    ;
     position: absolute;
     bottom: -90px;
     margin-left: 26px;
     background-color: #cccccc67;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
 * {
-  font-family: "Hammersmith One";
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-    font-size: 15px; ;
+    font-family: "Hammersmith One";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 15px;
+    ;
 }
 
 @font-face {
     font-family: Hammersmith One;
     src: url(//src/assets/font/HammersmithOne-Regular.ttf);
 }
+
 @media only screen and (max-width: 680px) {
     * {
         font-family: Hammersmith one;
-       font-size: 13px !important;
-  }
-
-   label {
         font-size: 13px !important;
-   }
+    }
+
+    label {
+        font-size: 13px !important;
+    }
+
     #banner {
-       background-color: #cccccc67;
-       height: auto;
+        background-color: #cccccc67;
+        height: auto;
         width: 358px;
         position: relative;
         display: flex;
-      border-radius: 4%;
+        border-radius: 4%;
     }
-   #img-perfil {
-       width: 130px;
-      height: 130px;
-       border-radius: 100%;
-       border: 13px solid white;
-       position: absolute;
-       bottom: -65px;
-       margin-left: 26px;
-     background-color: #cccccc67;
+
+    #img-perfil {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        border: 13px solid white;
+        position: absolute;
+        bottom: -65px;
+        margin-left: 26px;
+        background-color: #cccccc67;
     }
+
     #button {
         background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
         color: #fff;
@@ -131,20 +146,24 @@ body {
         margin-top: 20px;
         border-radius: 5px;
     }
+
     #form1 {
         position: relative;
-        display:flex;
+        display: flex;
         align-items: center;
         border-color: #581c87;
         justify-content: center;
         padding: 1%;
     }
-    
-    
+
+
     #cadastro {
         text-align: center;
         font-size: 30px;
         padding: 1%;
     }
-    
+
+    .font-bold {
+        font-size: 24px;
+    }
 }

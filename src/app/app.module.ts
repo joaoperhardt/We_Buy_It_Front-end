@@ -28,7 +28,6 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     HomeModule,
-    visualizacao-loja
     ProductModule
   ],
   providers: [
