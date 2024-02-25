@@ -48,15 +48,14 @@ table {
 }
 
 @font-face {
-	font-family: "Hammersmith One";
+	font-family: "Hammersmith One"; 
 	src: url(./assets/font/HammersmithOne-Regular.ttf);
 }
 
 * {
 	font-family: "Hammersmith One";
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 
 /* RESET CSS
 */
@@ -104,8 +103,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 
 /* Estilo Botão das Categorias */
 .mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{
