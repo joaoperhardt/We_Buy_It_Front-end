@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from './product.component';
 import { AngularLineawesomeModule, LaIconLibrary } from 'angular-line-awesome';
-import { lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasMapMarker, lasUser, lasStoreAlt } from 'angular-line-awesome/icons';
+import { lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasMapMarker, lasUser, lasStoreAlt, lasEllipsisH, lasStar } from 'angular-line-awesome/icons';
 import { HeaderModule } from '../home/header/header.module';
 import { Router, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,6 +25,6 @@ import { BrowserModule } from '@angular/platform-browser';
 })
 export class ProductModule { 
   constructor(library: LaIconLibrary) {
-    library.addIcons([lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasMapMarker, lasUser, lasStoreAlt])
+    library.addIcons([lasSearch, lasShoppingCart, lasBell, lasUserCircle, lasMapMarker, lasUser, lasStoreAlt, lasEllipsisH, lasStar])
   }
 }
