@@ -1,5 +1,3 @@
-// visualizacao-loja.module.ts
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VisualizacaoLojaComponent } from './visualizacao-loja.component';
@@ -9,6 +7,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CadastroLojaComponent } from '../cadastro-loja/cadastro-loja.component';
 
 @NgModule({
     declarations: [VisualizacaoLojaComponent],

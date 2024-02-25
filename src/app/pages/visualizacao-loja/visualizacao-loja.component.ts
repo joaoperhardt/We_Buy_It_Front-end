@@ -1,5 +1,3 @@
-// visualizacao-loja.component.ts
-
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/backend/user.service';
 
@@ -9,5 +7,6 @@ import { UserService } from 'src/app/backend/user.service';
     styleUrls: ['./visualizacao-loja.component.scss']
 })
 export class VisualizacaoLojaComponent {
+    
 
 }
