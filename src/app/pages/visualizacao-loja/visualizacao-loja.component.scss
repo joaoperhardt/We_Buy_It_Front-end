@@ -16,7 +16,17 @@ body {
     justify-content: center;
     cursor: pointer;
 }
- 
+#img-perfil {
+    border-radius: 100%;
+    border: 8px solid #cccccc67;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    border-radius: 2%;
+    border: 8px solid #cccccc67;
+}
 .card:hover {
     border-color: #B35FD0;
 }
