@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 import { TelaPesquisaComponent } from './pages/tela-pesquisa/tela-pesquisa.component';
-import { VisualizacaoLojaComponent } from './pages/visualizacao-loja/visualizacao-loja.component';
+import { VisualizacaoLojaModule } from './pages/visualizacao-loja/visualizacao-loja.module';
 
 
 registerLocaleData(en);
@@ -18,7 +18,7 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    VisualizacaoLojaComponent,
+    
     
   ],
   imports: [
@@ -26,7 +26,7 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    HomeModule
+    HomeModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

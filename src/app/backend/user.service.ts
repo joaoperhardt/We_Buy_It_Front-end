@@ -27,4 +27,9 @@ export class UserService {
       return this.http.post(route, userData, {
       });
   }
+  private baseUrl = 'https://localhost:7191';
+
+getUsuarioInfo(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/store`);
+}
 }
