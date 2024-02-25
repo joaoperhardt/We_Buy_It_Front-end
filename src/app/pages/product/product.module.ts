@@ -18,6 +18,9 @@ import { BrowserModule } from '@angular/platform-browser';
     RouterModule,
     BrowserModule,
     AngularLineawesomeModule
+  ],
+  exports: [
+    ProductComponent
   ]
 })
 export class ProductModule { 

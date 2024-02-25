@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
+import { ProductModule } from './pages/product/product.module';
 
 
 registerLocaleData(en);
@@ -22,7 +23,8 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    HomeModule
+    HomeModule,
+    ProductModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
