@@ -42,7 +42,7 @@ getFormControlStatus: any;
       
     
       if (!this.formGroup.valid) {  
-        alert('Preencha Corretamente');
+        alert('Preencha Corretamente!');
         return;
       } else alert('Loja cadastrada com sucesso!')
     
