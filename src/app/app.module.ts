@@ -25,7 +25,7 @@ registerLocaleData(en);
     declarations: [
         AppComponent,
 
-        CarrinhoDeComprasComponent
+        CarrinhoDeComprasComponent,
 
         PrincipalTelaComponent
 

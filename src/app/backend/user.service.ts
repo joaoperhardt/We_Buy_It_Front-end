@@ -33,7 +33,8 @@ export class UserService {
     });
   }
   public postcadastrousuario(userData: any):Observable<any> {
-    const route: string = 'https://localhost:7191/cadastro';
+    const route: string = 'https://localhost:7191/user'
+    ;
     return this.http.post(route, userData, {
     });
     
