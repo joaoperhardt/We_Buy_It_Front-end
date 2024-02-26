@@ -11,13 +11,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 import { CadastroUsuarioModule } from "./pages/cadastro-usuario/cadastro-usuario.module";
 import { PaymentMethodModule } from "./pages/payment-method/payment-method.module";
+import { PrincipalTelaComponent } from './pages/principal-tela/principal-tela.component';
+import { PrincipalTelaModule } from './pages/principal-tela/principal-tela.module';
+
 
 
 registerLocaleData(en);
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        PrincipalTelaComponent
     ],
     providers: [
         { provide: NZ_I18N, useValue: en_US }
@@ -30,7 +34,9 @@ registerLocaleData(en);
         BrowserAnimationsModule,
         HomeModule,
         CadastroUsuarioModule,
-        PaymentMethodModule
+        PaymentMethodModule,
+        PrincipalTelaModule
+        
     ]
 })
 export class AppModule { }
