@@ -13,13 +13,22 @@ import { CadastroUsuarioModule } from "./pages/cadastro-usuario/cadastro-usuario
 import { PaymentMethodModule } from "./pages/payment-method/payment-method.module";
 import { CarrinhoDeComprasComponent } from './pages/carrinho-de-compras/carrinho-de-compras.component';
 
+import { PrincipalTelaComponent } from './pages/principal-tela/principal-tela.component';
+import { PrincipalTelaModule } from './pages/principal-tela/principal-tela.module';
+
+
+
 
 registerLocaleData(en);
 
 @NgModule({
     declarations: [
         AppComponent,
+
         CarrinhoDeComprasComponent
+
+        PrincipalTelaComponent
+
     ],
     providers: [
         { provide: NZ_I18N, useValue: en_US }
@@ -32,7 +41,9 @@ registerLocaleData(en);
         BrowserAnimationsModule,
         HomeModule,
         CadastroUsuarioModule,
-        PaymentMethodModule
+        PaymentMethodModule,
+        PrincipalTelaModule
+        
     ]
 })
 export class AppModule { }
