@@ -11,13 +11,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 import { CadastroUsuarioModule } from "./pages/cadastro-usuario/cadastro-usuario.module";
 import { PaymentMethodModule } from "./pages/payment-method/payment-method.module";
+import { CarrinhoDeComprasComponent } from './pages/carrinho-de-compras/carrinho-de-compras.component';
 
 
 registerLocaleData(en);
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        CarrinhoDeComprasComponent
     ],
     providers: [
         { provide: NZ_I18N, useValue: en_US }
