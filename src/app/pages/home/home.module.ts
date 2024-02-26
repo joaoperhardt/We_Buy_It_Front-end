@@ -23,7 +23,8 @@ import { VisualizacaoLojaModule } from '../visualizacao-loja/visualizacao-loja.m
     VisualizacaoLojaModule
   ],
   exports: [
-    HomeComponent
+    HomeComponent,
+    HeaderModule
   ]
 })
 export class HomeModule { }

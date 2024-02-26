@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
+import { UserProfileModule } from './pages/user-profile/user-profile.module';
 import { ProductModule } from './pages/product/product.module';
 import { TelaPesquisaComponent } from './pages/tela-pesquisa/tela-pesquisa.component';
 import { VisualizacaoLojaModule } from './pages/visualizacao-loja/visualizacao-loja.module';
@@ -28,6 +29,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     HomeModule,
+    UserProfileModule,
     ProductModule
   ],
   providers: [
