@@ -11,8 +11,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 import { CadastroUsuarioModule } from "./pages/cadastro-usuario/cadastro-usuario.module";
 import { PaymentMethodModule } from "./pages/payment-method/payment-method.module";
+import { CarrinhoDeComprasComponent } from './pages/carrinho-de-compras/carrinho-de-compras.component';
+
 import { PrincipalTelaComponent } from './pages/principal-tela/principal-tela.component';
 import { PrincipalTelaModule } from './pages/principal-tela/principal-tela.module';
+
 
 
 
@@ -21,7 +24,11 @@ registerLocaleData(en);
 @NgModule({
     declarations: [
         AppComponent,
+
+        CarrinhoDeComprasComponent
+
         PrincipalTelaComponent
+
     ],
     providers: [
         { provide: NZ_I18N, useValue: en_US }
