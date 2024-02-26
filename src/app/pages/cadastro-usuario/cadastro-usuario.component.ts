@@ -30,14 +30,14 @@ export class CadastroUsuarioComponent {
   }
   public submit() {
     if (!this.formGroup.valid) {
-      alert('Invalido');
+      alert('Preencha corretamente!');
       return;
-    }
+    }else alert('Usuário cadstrado com sucesso!')
   
     this.userService.postcadastrousuario(this.formGroup.value).subscribe((result: any) => {
       this.router.navigate([``]);
     });
-    
+    console.clear
   }
 }
 
