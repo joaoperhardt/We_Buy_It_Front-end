@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { PaymentDto } from './DTO/payment.dto';
 
 @Injectable({
   providedIn: 'root'
@@ -42,9 +43,12 @@ export class UserService {
       return this.http.post(route, userData, {
       });
   }
-  private baseUrl = 'https://localhost:7191';
+  
+  public postcadastrocartao(userData: PaymentDto):Observable<any> {
+    const route: string = 'https://localhost:7191/payment';
+    return this.http.post(route, userData, {
+    });
+    
+  }
 
-getUsuarioInfo(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/store`);
-}
 }

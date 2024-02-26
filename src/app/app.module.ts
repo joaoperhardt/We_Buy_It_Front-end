@@ -9,32 +9,28 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
-import { UserProfileModule } from './pages/user-profile/user-profile.module';
-import { ProductModule } from './pages/product/product.module';
-import { TelaPesquisaComponent } from './pages/tela-pesquisa/tela-pesquisa.component';
-import { VisualizacaoLojaModule } from './pages/visualizacao-loja/visualizacao-loja.module';
+import { CadastroUsuarioModule } from "./pages/cadastro-usuario/cadastro-usuario.module";
+import { PaymentMethodModule } from "./pages/payment-method/payment-method.module";
 
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    
-    
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    HomeModule,
-    UserProfileModule,
-    ProductModule
-  ],
-  providers: [
-    { provide: NZ_I18N, useValue: en_US }
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    providers: [
+        { provide: NZ_I18N, useValue: en_US }
+    ],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        HomeModule,
+        CadastroUsuarioModule,
+        PaymentMethodModule
+    ]
 })
 export class AppModule { }
