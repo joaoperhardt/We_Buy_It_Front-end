@@ -44,7 +44,7 @@ getFormControlStatus: any;
       if (!this.formGroup.valid) {  
         alert('Preencha Corretamente');
         return;
-      }
+      } else alert('Loja cadastrada com sucesso!')
     
     this.userService.postcadastroloja(this.formGroup.value).subscribe((result: any) => {
       this.router.navigate([``]);
