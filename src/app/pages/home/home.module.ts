@@ -7,24 +7,25 @@ import { CadastroUsuarioModule } from '../cadastro-usuario/cadastro-usuario.modu
 import { CadastroLojaModule } from '../cadastro-loja/cadastro-loja.module';
 import { TelaPesquisaModule} from '../tela-pesquisa/tela-pesquisa.module';
 import { VisualizacaoLojaModule } from '../visualizacao-loja/visualizacao-loja.module';
+import { PaymentMethodModule } from "../payment-method/payment-method.module";
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    
-  ],
-  imports: [
-    CommonModule,
-    HeaderModule,
-    CadastroAnuncioModule,
-    CadastroUsuarioModule,
-    CadastroLojaModule,
-    TelaPesquisaModule,
-    VisualizacaoLojaModule
-  ],
-  exports: [
-    HomeComponent,
-    HeaderModule
-  ]
+    declarations: [
+        HomeComponent,
+    ],
+    exports: [
+        HomeComponent,
+        HeaderModule
+    ],
+    imports: [
+        CommonModule,
+        HeaderModule,
+        CadastroAnuncioModule,
+        CadastroUsuarioModule,
+        CadastroLojaModule,
+        TelaPesquisaModule,
+        VisualizacaoLojaModule,
+        PaymentMethodModule
+    ]
 })
 export class HomeModule { }
