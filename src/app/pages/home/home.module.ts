@@ -8,6 +8,7 @@ import { CadastroLojaModule } from '../cadastro-loja/cadastro-loja.module';
 import { TelaPesquisaModule} from '../tela-pesquisa/tela-pesquisa.module';
 import { VisualizacaoLojaModule } from '../visualizacao-loja/visualizacao-loja.module';
 import { PaymentMethodModule } from "../payment-method/payment-method.module";
+import { CarrinhoDeComprasModule } from '../carrinho-de-compras/carrinho-de-compras.module';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import { PaymentMethodModule } from "../payment-method/payment-method.module";
         CadastroLojaModule,
         TelaPesquisaModule,
         VisualizacaoLojaModule,
-        PaymentMethodModule
+        PaymentMethodModule,
+        CarrinhoDeComprasModule
     ]
 })
 export class HomeModule { }
