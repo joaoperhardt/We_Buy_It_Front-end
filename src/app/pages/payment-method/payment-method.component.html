@@ -5,7 +5,7 @@
             <h2 class="login-text text-3xl text-[#B35FD0]">Inserir cartão</h2>
         </div>
 
-        <form  [formGroup]="formGroup" class="login-form flex flex-col"   >
+        <form  [formGroup]="formGroup" class="login-form flex flex-col mt-10"   >
             
             <div class="input_box">   
                  <!-- <label class="user-cpf-name" for="user-cpf">Nome presente no cartão:</label> -->
@@ -39,14 +39,14 @@
             <div class="input_box">  <label class="card-cvv-write" for="card-cvv">CVV:</label>
                 <!-- <input type="text" id="card-cvv" formControlName="cvv" required>  -->
                 <nz-form-control nzErrorTip="Insira o CVV!">
-                <label class="card-cvv-write" for="card-cvv">Insira o CVV:</label>
+                <label class="card-cvv-write" for="card-cvv"></label>
                     <input formControlName="cvv" type="text" id="card-cvv" name="cardP"  placeholder="Insira o CVV">
                     </nz-form-control>
             </div>
            
             <label class="card-cvv-write" for="card-cvv">Data de vencimento:</label>
             <div  class=" input_box  flex flex-row justify-between items-center" >
-                <span class="flex flex-col">
+                <span class="flex flex-col mt-5">
                     <nz-form-control nzErrorTip="Insira o Mês!">
                     <label for="expiring-date-month">Mês:</label>
                     
