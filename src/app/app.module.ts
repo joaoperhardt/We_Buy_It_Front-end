@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { UserProfileModule } from './pages/user-profile/user-profile.module';
 import { ProductModule } from './pages/product/product.module';
 import { CarrinhoDeComprasModule } from './pages/carrinho-de-compras/carrinho-de-compras.module';
+import { LoginComponent } from './pages/login/login.component';
 
 registerLocaleData(en);
 
@@ -28,6 +29,7 @@ registerLocaleData(en);
     ],
     providers: [
         { provide: NZ_I18N, useValue: en_US },
+        LoginComponent
     ],
     bootstrap: [AppComponent],
     imports: [

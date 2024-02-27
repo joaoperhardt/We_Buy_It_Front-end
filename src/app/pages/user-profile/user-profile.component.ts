@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { NzUploadChangeParam } from 'ng-zorro-antd/upload'; 
 import { NzMessageService } from 'ng-zorro-antd/message';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-user-profile',
@@ -11,7 +12,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent {
-  public id: string = `1`;
+  private id:string = `1`;
   public formGroup: any;
   
   constructor(
@@ -19,7 +20,7 @@ export class UserProfileComponent {
     private formBuilder: FormBuilder,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private msg: NzMessageService
+    private msg: NzMessageService,
   ) {
     this.formGroup = this.formBuilder.group({
       name: ['', Validators.required],
@@ -48,7 +49,6 @@ export class UserProfileComponent {
       ...this.formGroup.value
     }
     ).subscribe((result: any) => {
-      console.log(result)
     })
   }
 
