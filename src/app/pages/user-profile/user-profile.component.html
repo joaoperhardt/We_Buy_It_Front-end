@@ -73,12 +73,10 @@
 
                     <div class="items-center mt-16">
                         <p class="text-xl text-left">Formas de pagamento:</p>
-                        <a href="./inserir-cartao.html">
-                            <p
-                                class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900 justify-center">
-                                Adicionar
-                                cartão +</p>
-                        </a>
+                        <p [routerLink]="['../payment-method']"
+                            class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900 justify-center">
+                            Adicionar
+                            cartão +</p>
                         <div class="flex border-y-4 py-8">
                             <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center pt-4">
                                 <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
@@ -105,9 +103,8 @@
                     </div>
                     <div class="add-store flex flex-col">
                         <p class="mt-14 text-xl text-left">Suas Lojas:</p>
-                        <a href="./Tela-Cadastro-Loja.html"><label
-                                class="underline underline-offset-2 text-purple-900 cursor-pointer flex my-4 text-center"
-                                for="add-store-plus">Adicionar Loja +</label></a>
+                        <label [routerLink]="['../store-register']" class="underline underline-offset-2 text-purple-900 cursor-pointer flex my-4 text-center"
+                            for="add-store-plus">Adicionar Loja +</label>
                         <div class="flex border-y-4 py-8">
                             <div
                                 class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500">

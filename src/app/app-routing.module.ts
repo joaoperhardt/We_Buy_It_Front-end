@@ -7,14 +7,22 @@ import { ProductComponent } from './pages/product/product.component';
 import { PrincipalTelaComponent } from './pages/principal-tela/principal-tela.component';
 import { CadastroAnuncioComponent } from './pages/cadastro-anuncio/cadastro-anuncio.component';
 import { TelaPesquisaComponent } from './pages/tela-pesquisa/tela-pesquisa.component';
+import { CadastroLojaComponent } from './pages/cadastro-loja/cadastro-loja.component';
+import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
+import { PaymentMethodComponent } from './pages/payment-method/payment-method.component';
+import { VisualizacaoLojaComponent } from './pages/visualizacao-loja/visualizacao-loja.component';
 
 const routes: Routes = [
   {path: 'home',  pathMatch: `full`, component: PrincipalTelaComponent},
   {path: '', pathMatch: `full`, component: PrincipalTelaComponent},
   {path: 'user', pathMatch: `full`, component: UserProfileComponent},
-  {path: 't', pathMatch: `full`, component: ProductComponent},
+  {path: 'product', pathMatch: `full`, component: ProductComponent},
   {path: 'anuncio', pathMatch: `full`, component: CadastroAnuncioComponent},
-  {path: 'search', pathMatch: `full`, component: TelaPesquisaComponent}
+  {path: 'search', pathMatch: `full`, component: TelaPesquisaComponent},
+  {path: 'store-register', pathMatch: `full`, component: CadastroLojaComponent},
+  {path: 'user-register', pathMatch: `full`, component: CadastroUsuarioComponent},
+  {path: 'payment-method', pathMatch: `full`, component: PaymentMethodComponent},
+  {path: 'store', pathMatch: `full`, component: VisualizacaoLojaComponent},
 ];
 
 @NgModule({
