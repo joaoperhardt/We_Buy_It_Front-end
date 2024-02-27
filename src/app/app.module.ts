@@ -11,8 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 import { CadastroUsuarioModule } from "./pages/cadastro-usuario/cadastro-usuario.module";
 import { PaymentMethodModule } from "./pages/payment-method/payment-method.module";
-import { PrincipalTelaComponent } from './pages/principal-tela/principal-tela.component';
 import { PrincipalTelaModule } from './pages/principal-tela/principal-tela.module';
+import { AppRoutingModule } from './app-routing.module';
+import { UserProfileModule } from './pages/user-profile/user-profile.module';
+import { ProductModule } from './pages/product/product.module';
 
 
 
@@ -20,8 +22,7 @@ registerLocaleData(en);
 
 @NgModule({
     declarations: [
-        AppComponent,
-        PrincipalTelaComponent
+        AppComponent
     ],
     providers: [
         { provide: NZ_I18N, useValue: en_US }
@@ -35,8 +36,11 @@ registerLocaleData(en);
         HomeModule,
         CadastroUsuarioModule,
         PaymentMethodModule,
+        PrincipalTelaModule,      
+        AppRoutingModule,
+        UserProfileModule,
+        ProductModule,
         PrincipalTelaModule
-        
     ]
 })
 export class AppModule { }
