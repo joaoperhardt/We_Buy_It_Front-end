@@ -30,8 +30,8 @@ export class LoginComponent {
     this.LoginService.login(this.loginForm.value).subscribe((result:any)=>{
       console.log(result)
       this.router.navigate([`user`])
-    }, err => {
-      alert("Login Inválido! :(")
+    }, (err: any) => {
+      alert("Login Inválido! ")
       console.log(err)
     })
   }
