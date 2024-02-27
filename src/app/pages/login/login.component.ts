@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BackendService } from 'src/app/backend/backend.service';
+import { UserService } from 'src/app/backend/user.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,7 @@ import { BackendService } from 'src/app/backend/backend.service';
 export class LoginComponent {
   public loginForm:any;
   public constructor(
-    private LoginService: BackendService,
+    private LoginService: UserService,
     @Inject(Router) private router: Router,
     private formBuilder: FormBuilder
   ){
