@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./principal-tela.component.scss']
 })
 export class PrincipalTelaComponent {
-
+  constructor() {
+    window.scrollTo(0,0)
+   }
 }

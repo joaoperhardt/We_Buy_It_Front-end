@@ -3,7 +3,7 @@
 
         <div class="flex items-center p-1 lg:hidden">
             <button id="filter-icon" type="button">
-                <la-icon icon="filter" class="la-2x p-1"></la-icon>
+                <la-icon icon="filter" class="la-2x p-1" (click)="showFilters()"></la-icon>
             </button>
             <h1 class="px-2 my-4 text-2xl float-right">Resultados para "camiseta ":</h1>
         </div>
@@ -133,12 +133,12 @@
             </div>
         </aside>
 
-        <div id="mobile-filters-div" class="hidden border-t-2 border-color-black text-center items-center flex-col p-1">
+        <div [id]="mobileFilters" id="mobile-filters-div" class="hidden border-t-2 border-color-black text-center items-center flex-col p-1">
 
             <div class="mt-6 flex justify-between items-center">
-                <i class="las la-times la-2x p-1" onclick="CloseMobileFilters()"></i>
+                <la-icon icon="times" class="la-2x p-1"></la-icon>
                 <h1 class="text-2xl font-bold">Filtros:</h1>
-                <i class="las la-check la-2x p-1" onclick="ApproveMobileFilters()"></i>
+                <la-icon icon="check" class="la-2x p-1"></la-icon>
             </div>
 
 

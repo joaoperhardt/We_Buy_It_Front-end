@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderModule } from '../home/header/header.module';
 import { TelaPesquisaComponent } from './tela-pesquisa.component';
 import { AngularLineawesomeModule, LaIconLibrary } from 'angular-line-awesome';
-import { lasUser, lasFilter, lasUserNurse } from 'angular-line-awesome/icons';
+import { lasUser, lasFilter, lasTimes, lasCheck } from 'angular-line-awesome/icons';
 
 @NgModule({
   declarations: [TelaPesquisaComponent],
@@ -25,6 +25,6 @@ import { lasUser, lasFilter, lasUserNurse } from 'angular-line-awesome/icons';
 })
 export class TelaPesquisaModule { 
   constructor(library: LaIconLibrary) {
-    library.addIcons([lasUser, lasFilter])
+    library.addIcons([lasUser, lasFilter, lasTimes, lasCheck])
   }
 }

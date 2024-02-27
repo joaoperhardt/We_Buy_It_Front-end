@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./tela-pesquisa.component.scss']
 })
 export class TelaPesquisaComponent {
+  public mobileFilters: any
   constructor() {
     window.scrollTo(0,0)
+   }
+
+   public showFilters() {
+    
    }
 }

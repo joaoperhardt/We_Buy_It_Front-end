@@ -29,11 +29,9 @@
                 <div class="border-b-4 p-2 ">
                     <p class="mt-9 text-xl">Formas de pagamento:</p>
                 </div>
-                <a href="./inserir-cartao.html">
-                    <p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900"> Adicionar
+                    <p [routerLink]="['../payment-method']" class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900"> Adicionar
                         cartão
                         +</p>
-                </a>
                 <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center pt-4">
                     <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
                     <div class="text-left ml-5">
@@ -47,10 +45,7 @@
                     <div class="border-b-4 p-2">
                         <p class="mt-9 text-xl">Suas Lojas:</p>
                     </div>
-
-                    <a href="./visualizacao_loja.html">
-                        <p class="my-4 underline underline-offset-2 cursor-pointer text-purple-900">Adicionar Loja +</p>
-                    </a>
+                    <p [routerLink]="['../store']" class="my-4 underline underline-offset-2 cursor-pointer text-purple-900">Adicionar Loja +</p>
                     <div
                         class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500">
                     </div>

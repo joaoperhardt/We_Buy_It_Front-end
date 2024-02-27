@@ -8,6 +8,8 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CadastroLojaComponent } from '../cadastro-loja/cadastro-loja.component';
+import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
     declarations: [VisualizacaoLojaComponent],
@@ -20,6 +22,8 @@ import { CadastroLojaComponent } from '../cadastro-loja/cadastro-loja.component'
         NzSelectModule, 
         ReactiveFormsModule,
         HeaderModule,
+        RouterModule,
+        BrowserModule
         ]
 })
 export class VisualizacaoLojaModule {}
