@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
   constructor() {
-    console.log('oi')
+   window.scrollTo(0,0)
   }
 }

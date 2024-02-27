@@ -35,6 +35,7 @@ getFormControlStatus: any;
       Cnpj: ['', Validators.required,],
       })
     
+      window.scrollTo(0,0);
     }
   
     onSubmit() {

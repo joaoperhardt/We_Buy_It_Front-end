@@ -35,6 +35,7 @@ export class CadastroAnuncioComponent {
       discount: ['',Validators.required]
     })
   
+    window.scrollTo(0,0);
   }
   public submit() {
   console.log(this.formGroup.value);
