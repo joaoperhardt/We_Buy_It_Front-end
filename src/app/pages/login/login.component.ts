@@ -33,7 +33,7 @@ export class LoginComponent {
       console.log(result)
       this.router.navigate([`user`]);
     }, (err: any) => {
-      alert("Login Inválido! ")
+      alert("Login Inválido!")
       console.log(err);
     })
   }
