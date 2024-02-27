@@ -12,7 +12,7 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent {
-  private id:string = `1`;
+  private id: string = '';
   public formGroup: any;
   
   constructor(
@@ -22,6 +22,8 @@ export class UserProfileComponent {
     private router: Router,
     private msg: NzMessageService,
   ) {
+
+    this.id = localStorage.getItem('id') || '0';
     this.formGroup = this.formBuilder.group({
       name: ['', Validators.required],
       cep: ['', Validators.required],

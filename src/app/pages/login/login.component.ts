@@ -31,6 +31,7 @@ export class LoginComponent {
     }
     this.LoginService.login(this.loginForm.value).subscribe((result:any)=>{
       console.log(result)
+      localStorage.setItem('id', result.user.id);
       this.router.navigate([`user`]);
     }, (err: any) => {
       alert("Login Inválido!")
