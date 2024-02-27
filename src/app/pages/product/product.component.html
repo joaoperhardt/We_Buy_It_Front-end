@@ -1,6 +1,4 @@
 <body>
-    <app-header></app-header>
-
     <div class="main-div h-[100vh] xl:mx-auto xl:max-w-[1424px]">
         <div id="product-div" class="p-4">
             <div class="hidden lg:flex lg:flex-row justify-between">
@@ -83,15 +81,13 @@
                         </div>
                         <div id="product-store" class="mt-4">
                             <p>Loja anunciante:</p>
-                            <a href="./visualizacao_loja.html">
-                                <div class="flex flex-row items-center">
-                                    <la-icon icon="store-alt" class="p-1"></la-icon>
-                                    <span class="">
-                                        <p class="cursor-pointer">Bnu Vinis</p>
-                                        <p>SC, Blumenau, Fortaleza, R. Eclair Martin da Silva, 256</p>
-                                    </span>
-                                </div>
-                            </a>
+                            <div [routerLink]="['../store']" class="flex flex-row items-center">
+                                <la-icon icon="store-alt" class="p-1"></la-icon>
+                                <span class="">
+                                    <p class="cursor-pointer">Bnu Vinis</p>
+                                    <p>SC, Blumenau, Fortaleza, R. Eclair Martin da Silva, 256</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -14,7 +14,7 @@ import { VisualizacaoLojaComponent } from './pages/visualizacao-loja/visualizaca
 
 const routes: Routes = [
   {path: 'home',  pathMatch: `full`, component: PrincipalTelaComponent},
-  {path: '', pathMatch: `full`, component: PrincipalTelaComponent},
+  {path: '', redirectTo: 'home',pathMatch: `full`},
   {path: 'user', pathMatch: `full`, component: UserProfileComponent},
   {path: 'product', pathMatch: `full`, component: ProductComponent},
   {path: 'anuncio', pathMatch: `full`, component: CadastroAnuncioComponent},
@@ -26,7 +26,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes), RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
