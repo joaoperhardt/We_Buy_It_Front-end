@@ -25,7 +25,8 @@ const routes: Routes = [
   {path: 'user-register', pathMatch: `full`, component: CadastroUsuarioComponent},
   {path: 'payment-method', pathMatch: `full`, component: PaymentMethodComponent},
   {path: 'store', pathMatch: `full`, component: VisualizacaoLojaComponent},
-  {path: 'cart', pathMatch: `full`, component: CarrinhoDeComprasComponent}
+  {path: 'cart', pathMatch: `full`, component: CarrinhoDeComprasComponent},
+  {path: 'login', pathMatch: `full`, component: LoginComponent}
 
 ];
 

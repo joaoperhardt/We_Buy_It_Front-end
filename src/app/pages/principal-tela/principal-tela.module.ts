@@ -8,13 +8,16 @@ import { PrincipalTelaComponent } from './principal-tela.component';
 
 
 @NgModule({
-  declarations: [PrincipalTelaComponent],
+  declarations: [
+    PrincipalTelaComponent
+  ],
   imports: [
     CommonModule,
     HeaderModule,
     RouterModule,
     BrowserModule
-  ], exports: [
+  ], 
+  exports: [
     PrincipalTelaComponent
   ]
 })
