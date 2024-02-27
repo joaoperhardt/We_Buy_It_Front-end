@@ -9,19 +9,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
+import { LoginModule } from './pages/login/login.module';
 import { CadastroUsuarioModule } from "./pages/cadastro-usuario/cadastro-usuario.module";
 import { PaymentMethodModule } from "./pages/payment-method/payment-method.module";
 import { CarrinhoDeComprasComponent } from './pages/carrinho-de-compras/carrinho-de-compras.component';
-
 import { PrincipalTelaComponent } from './pages/principal-tela/principal-tela.component';
 import { PrincipalTelaModule } from './pages/principal-tela/principal-tela.module';
-
-
-
 
 registerLocaleData(en);
 
 @NgModule({
+  
     declarations: [
         AppComponent,
 
@@ -42,8 +40,10 @@ registerLocaleData(en);
         HomeModule,
         CadastroUsuarioModule,
         PaymentMethodModule,
-        PrincipalTelaModule
+        PrincipalTelaModule,
+        LoginModule
         
     ]
+
 })
 export class AppModule { }

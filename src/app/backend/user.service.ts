@@ -3,12 +3,21 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { PaymentDto } from './DTO/payment.dto';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
   constructor(private http: HttpClient) { }
+
+  public login(userData: any): Observable<any> {
+    const route = 'https://localhost:7191/user/login';
+    return this.http.post(route, userData, {
+      
+    });
+
+  }
 
   public getByIdUser(id: string):Observable<any> {
     const route: string = `https://localhost:7191/user/${id}`;
@@ -53,3 +62,4 @@ export class UserService {
   }
 
 }
+
