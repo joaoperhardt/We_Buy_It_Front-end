@@ -1,0 +1,49 @@
+.card {
+    padding: 8px;
+    border: 2px solid rgba(81, 88, 112, .4);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: #B35FD0;
+}
+
+.imagem-produto {
+    max-width: 264px;
+    max-height: 264px;
+    justify-self: center;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.card ul {
+    display: flex;
+    justify-content: center;
+}
+
+.card i {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media (min-width: 1024px) {
+    .card i {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+.volunteer-icon {
+    margin: 8px;
+    color: #B35FD0;
+    
+}
