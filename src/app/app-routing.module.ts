@@ -11,6 +11,8 @@ import { CadastroLojaComponent } from './pages/cadastro-loja/cadastro-loja.compo
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
 import { PaymentMethodComponent } from './pages/payment-method/payment-method.component';
 import { VisualizacaoLojaComponent } from './pages/visualizacao-loja/visualizacao-loja.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CarrinhoDeComprasComponent } from './pages/carrinho-de-compras/carrinho-de-compras.component';
 
 const routes: Routes = [
   {path: 'home',  pathMatch: `full`, component: PrincipalTelaComponent},
@@ -23,8 +25,8 @@ const routes: Routes = [
   {path: 'user-register', pathMatch: `full`, component: CadastroUsuarioComponent},
   {path: 'payment-method', pathMatch: `full`, component: PaymentMethodComponent},
   {path: 'store', pathMatch: `full`, component: VisualizacaoLojaComponent},
+  {path: 'cart', pathMatch: `full`, component: CarrinhoDeComprasComponent}
 
-import { LoginComponent } from './pages/login/login.component';
 ];
 
 @NgModule({
