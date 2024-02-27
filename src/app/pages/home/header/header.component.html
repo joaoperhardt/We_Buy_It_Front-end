@@ -1,30 +1,30 @@
 <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
     <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
-        <a href="./index.html">
-            <span id="header-logo" class="flex cursor-pointer items-center">
-                <img class="hidden lg:flex mr-2 pb-2 lg:h-20" src="./assets/images/header/we_buy_it_bag_logo.png"
-                    alt="WeBuyIt logo">
-                <img class="flex lg:mr-8 h-10 lg:h-14 mb-1" src="./assets/images/header/we_buy_it_logo.png" alt="WeBuyIt title">
-            </span>
-        </a>
+        <span id="header-logo" [routerLink]="['home']" class="flex cursor-pointer items-center">
+            <img class="hidden lg:flex mr-2 pb-2 lg:h-20" src="./assets/images/header/we_buy_it_bag_logo.png"
+                alt="WeBuyIt logo">
+            <img class="flex lg:mr-8 h-10 lg:h-14 mb-1" src="./assets/images/header/we_buy_it_logo.png"
+                alt="WeBuyIt title">
+        </span>
         <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
-            <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
-                type="text" placeholder="Pesquisar">
-                <a href="./tela_pesquisa.htm "><la-icon icon="search" class="flex m-4 text-[#1d224d]"></la-icon></a>
+            <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none" type="text"
+                placeholder="Pesquisar">
+            <la-icon [routerLink]="['search']" icon="search" class="flex m-4 text-[#1d224d] cursor-pointer"></la-icon>
         </div>
         <div id="header-icons" class="flex items-center">
             <la-icon icon="search" class="flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden text-[#1d224d]"></la-icon>
             <a href="./carrinho_de_compras.html">
-                <la-icon icon="shopping-cart" class="la-3x mx-4 hidden sm:flex lg:flex cursor-pointer text-[#1d224d]"></la-icon></a>
+                <la-icon icon="shopping-cart"
+                    class="la-3x mx-4 hidden sm:flex lg:flex cursor-pointer text-[#1d224d]"></la-icon></a>
             <la-icon icon="bell" class="la-3x hidden mx-4 sm:flex lg:flex cursor-pointer text-[#1d224d]"></la-icon>
 
-            <a class="mt-1" href="./editar_perfil.html"><la-icon icon="user-circle" class="mt-1 la-3x lg:mx-4 cursor-pointer text-[#1d224d]"></la-icon></a>
+            <la-icon [routerLink]="['user']" icon="user-circle" class="mt-2 la-3x lg:mx-4 cursor-pointer text-[#1d224d]"></la-icon>
         </div>
     </div>
 </header>
 <nav class="w-screen text-center bg-[#414881] hidden md:flex lg:flex justify-center">
     <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
-        <li class="hover:bg-[#3C4378] rounded-lg" >
+        <li class="hover:bg-[#3C4378] rounded-lg">
             <a href="#" class="hover:text-yellow-400">Categorias</a>
             <div class="sub-menu">
                 <ul class="block">
@@ -95,7 +95,7 @@
 
         </li>
 
-        <li [routerLink]="['user']" class="hover:text-yellow-400 cursor-pointer"> Vender
+        <li [routerLink]="['anuncio']" class="hover:text-yellow-400 cursor-pointer"> Vender
 
 
         </li>
