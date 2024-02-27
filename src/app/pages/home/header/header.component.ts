@@ -17,7 +17,4 @@ export class HeaderComponent {
     })
   }
 
-  public sell() {
-    this.router.navigate([`user`])
-  }
 }
