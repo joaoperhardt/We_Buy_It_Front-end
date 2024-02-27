@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,10 +48,33 @@ table {
 }
 
 @font-face {
-	font-family: "Hammersmith One";
+	font-family: "Hammersmith One"; 
 	src: url(./assets/font/HammersmithOne-Regular.ttf);
 }
 
 * {
 	font-family: "Hammersmith One";
+}
+
+/* Estilo Botão das Categorias */
+.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{
+	border-left: 0!important;
+}
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard:not([class*=mat-elevation-z]), .mat-button-toggle-group-appearance-standard:not([class*=mat-elevation-z]){
+	border: 0!important;
+
+}
+
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked {
+	background-color: #ff0000!important;
+	color:#ffffff !important;
+}
+
+.mat-button-toggle-appearance-standard {
+	background-color: #ccc!important;
+	border-radius: 1px;
+}
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{
+	padding: 5px!important;
 }

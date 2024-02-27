@@ -1,7 +1,8 @@
+import { ResourceLoader } from '@angular/compiler';
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
-import { BackendService } from 'src/app/backend/backend.service';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { UserService } from 'src/app/backend/user.service';
 
 @Component({
   selector: 'app-login',
@@ -10,15 +11,16 @@ import { BackendService } from 'src/app/backend/backend.service';
 })
 export class LoginComponent {
   public loginForm:any;
+  
   public constructor(
-    private LoginService: BackendService,
+    private LoginService: UserService,
     @Inject(Router) private router: Router,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private activatedRoute: ActivatedRoute
   ){
     this.loginForm=this.formBuilder.group({
       email:['', Validators.required],
       password:['', Validators.required],
-
     })
   }
 
@@ -29,10 +31,11 @@ export class LoginComponent {
     }
     this.LoginService.login(this.loginForm.value).subscribe((result:any)=>{
       console.log(result)
-      this.router.navigate([`user`])
-    }, err => {
-      alert("Login Inválido! :(")
-      console.log(err)
+      localStorage.setItem('id', result.user.id);
+      this.router.navigate([`user`]);
+    }, (err: any) => {
+      alert("Login Inválido!")
+      console.log(err);
     })
   }
 }
