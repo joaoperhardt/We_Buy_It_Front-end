@@ -6,6 +6,11 @@
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+
+    &:hover {
+        border-color: #B35FD0;
+        transition: .5s;
+    }
 }
 
 .card:hover {

@@ -28,6 +28,7 @@ export class UserProfileComponent {
     })
     this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
       this.initUpdate();
+      window.scrollTo(0,0);
     })
   }
 

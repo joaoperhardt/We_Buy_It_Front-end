@@ -30,11 +30,10 @@ paymentform: any;
       expiringmonth: ['', Validators.required],
       expiringdate: ['', Validators.required],
     });
+
+    window.scrollTo(0,0);
   }
    
-
-
-
     public submit() {
       if (!this.formGroup.valid) {
         alert('Invalido');

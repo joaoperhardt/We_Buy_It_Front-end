@@ -27,6 +27,11 @@ body {
 
 .add-to-cart-button {
     border: 2px solid #B35FD0;
+
+    &:hover {
+        background-color: rgba($color: #d4a5f0, $alpha: 0.5);
+        transition: .5s;
+    }
 }
 
 .buy-button {
@@ -41,10 +46,12 @@ body {
     font-weight: 600;
     justify-self: center;
     cursor: pointer;
-}
 
-.product-tag:hover {
-    background-color: rgba($color: #d4a5f0, $alpha: 0.5);
+    &:hover {
+        background-color: rgba($color: #d4a5f0, $alpha: 0.5);
+        transition: .5s;
+        transition-timing-function: ease-in-out;
+    }
 }
 
 .user-comment {
@@ -85,6 +92,11 @@ body {
         font-size: 20px;
         line-height: 28px;
     }
+
+    &:hover {
+        border-color: #B35FD0;
+        transition: .5s;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -92,10 +104,6 @@ body {
         font-size: 32px;
         line-height: 28px;
     }
-}
-
-.card:hover {
-    border-color: #B35FD0;
 }
 
 .imagem-produto{

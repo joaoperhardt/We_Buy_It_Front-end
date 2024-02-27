@@ -36,6 +36,11 @@
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+
+    &:hover {
+        border-color: #B35FD0;
+        transition: .5s;
+    }
 }
 
 .card:hover {
@@ -60,13 +65,13 @@
     justify-content: center;
 }
 
-.card i {
+.card li {
     font-size: 18px;
     line-height: 28px;
 }
 
 @media (min-width: 1024px) {
-    .card i {
+    .card li {
         font-size: 30px;
         line-height: 36px;
     }

@@ -1,15 +1,4 @@
-<!doctype html>
-<html>
-
-<head>
-  <title>Tela de Visualização de Loja</title>
-</head>
-
 <body>
-  <header>
-    <app-header></app-header>
-  </header>
-
   <nav class="w-screen text text-center bg-[#414881] hidden md:flex lg:flex justify-center">
     <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
     </ul>
@@ -51,9 +40,7 @@
 
 
     <div id="add-product" class="adicionar-produto mx-6 xl:mx-2 mt-3 flex items-start">
-      <a href="./cadastro-produto.html">
-        <h2 class="font-bold xl:mb-4 ">Adicionar Produto +</h2>
-      </a>
+      <h2 [routerLink]="['../anuncio']" class="font-bold xl:mb-4 cursor-pointer">Adicionar Produto +</h2>
     </div>
 
 
@@ -179,5 +166,3 @@
     </div>
   </div>
 </body>
-
-</html>
