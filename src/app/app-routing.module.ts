@@ -23,6 +23,8 @@ const routes: Routes = [
   {path: 'user-register', pathMatch: `full`, component: CadastroUsuarioComponent},
   {path: 'payment-method', pathMatch: `full`, component: PaymentMethodComponent},
   {path: 'store', pathMatch: `full`, component: VisualizacaoLojaComponent},
+
+import { LoginComponent } from './pages/login/login.component';
 ];
 
 @NgModule({
