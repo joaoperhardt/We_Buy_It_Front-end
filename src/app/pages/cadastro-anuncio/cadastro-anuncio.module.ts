@@ -20,7 +20,6 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   ],
   imports: [
     CommonModule, 
-    CommonModule,
     ReactiveFormsModule,
     NzButtonModule,
     RouterModule,

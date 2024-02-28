@@ -19,6 +19,7 @@ import { UserProfileModule } from './pages/user-profile/user-profile.module';
 import { ProductModule } from './pages/product/product.module';
 import { CarrinhoDeComprasModule } from './pages/carrinho-de-compras/carrinho-de-compras.module';
 import { LoginComponent } from './pages/login/login.component';
+import { FooterModule } from './pages/home/footer/footer.module';
 
 registerLocaleData(en);
 
@@ -45,7 +46,8 @@ registerLocaleData(en);
         ProductModule,
         PrincipalTelaModule,
         LoginModule,
-        CarrinhoDeComprasModule
+        CarrinhoDeComprasModule,
+        FooterModule
     ]
 
 })
