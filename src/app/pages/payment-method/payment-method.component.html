@@ -36,7 +36,7 @@
                     </nz-form-control>
             </div>
             
-            <div class="input_box">  <label class="card-cvv-write" for="card-cvv">CVV:</label>
+            <div class="input_box">  <label class="card-cvv-write" for="card-cvv">:</label>
                 <!-- <input type="text" id="card-cvv" formControlName="cvv" required>  -->
                 <nz-form-control nzErrorTip="Insira o CVV!">
                 <label class="card-cvv-write" for="card-cvv">Insira o CVV:</label>
@@ -45,7 +45,10 @@
             </div>
            
             <label class="card-cvv-write" for="card-cvv">Data de vencimento:</label>
-            <div  class=" input_box  flex flex-row justify-between items-center" >
+
+
+            <div class="flex flex-row">  
+            <div  class=" input_box   justify-between items-center" >
                 <span class="flex flex-col">
                     <nz-form-control nzErrorTip="Insira o Mês!">
                     <label for="expiring-date-month">Mês:</label>
@@ -69,7 +72,7 @@
                
                <div class="input_box">  
                 <nz-form-control nzErrorTip="Insira o ano!">
-                <span class="flex flex-col">
+                <span class="">
                 <label for="expiring-date-year">Ano (4 dígitos):</label>
                 <input class="" type="text" id="expiring-date-year" formControlName="expiringdate" required>
                      </span> 
@@ -77,6 +80,11 @@
                 </div>
                 
             </div>
+           
+        
+        </div>
+            
+            
             
             <button class="btn-box" nz-button nzType="primary" (click)="submit()" id="register-button">Registrar</button>
         </form>
