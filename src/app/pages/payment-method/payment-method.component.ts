@@ -36,9 +36,9 @@ paymentform: any;
    
     public submit() {
       if (!this.formGroup.valid) {
-        alert('Invalido');
+        alert('Preencha corretamente!');
         return;
-      }
+      } else alert ('Cartão adicionado com sucesso!')
     
       const paymentdto: PaymentDto = {
         CPF: this.formGroup.get("cpfP")?.value,
