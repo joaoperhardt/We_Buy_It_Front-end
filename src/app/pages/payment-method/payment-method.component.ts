@@ -24,7 +24,7 @@ paymentform: any;
    ) {
     this.formGroup = this.formBuilder.group({
       namePayment: ['', Validators.required],
-      cpf: ['', Validators.required],
+      cpfP: ['', Validators.required],
       numbercard: ['', Validators.required],
       cvv: ['', Validators.required],
       expiringmonth: ['', Validators.required],
@@ -41,7 +41,7 @@ paymentform: any;
       }
     
       const paymentdto: PaymentDto = {
-        CPF: this.formGroup.get("cpf")?.value,
+        CPF: this.formGroup.get("cpfP")?.value,
         TITULAR_NAME: this.formGroup.get("namePayment")?.value,
         NUMBER: this.formGroup.get("numbercard")?.value,
         CVV: this.formGroup.get("cvv")?.value,
