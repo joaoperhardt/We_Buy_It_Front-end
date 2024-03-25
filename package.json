@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.8",
-    "@angular/cli": "~16.1.8",
+    "@angular/cli": "^16.1.8",
     "@angular/compiler-cli": "^16.1.0",
     "@babel/plugin-transform-async-generator-functions": "^7.23.9",
     "@babel/plugin-transform-unicode-property-regex": "^7.23.3",
